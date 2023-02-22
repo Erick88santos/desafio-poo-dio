@@ -9,20 +9,31 @@ public class Main {
     public static void main(String[] args) {
         /*criação de cursos*/
         Curso curso1 = new Curso();
-        curso1.setTitulo("curso Java");
+        curso1.setTitulo("Curso em Java");
         curso1.setDescricao("hahaha curso java ");
         curso1.setCargaHoraria(8);
 
         Curso curso2 = new Curso();
-        curso2.setTitulo("curso POO");
+        curso2.setTitulo("Curso POO");
         curso2.setDescricao("hahaha curso POO");
         curso2.setCargaHoraria(2);
+
+        /*Curso curso3 = new Curso();
+        curso3.setTitulo("Curso API Python");
+        curso3.setDescricao("hahaha curso API");
+        curso3.setCargaHoraria(8);
+
+        Curso curso4 = new Curso();
+        curso4.setTitulo("Curso Python Pygame");
+        curso4.setDescricao("hahaha curso Pygame");
+        curso4.setCargaHoraria(2);*/
+
 
         /*criação de mentoria*/
         Mentoria mentoria = new Mentoria();
         mentoria.setTitulo("mentoria Java");
         mentoria.setDescricao("Descrição Java");
-        mentoria.setData(LocalDate.now()); /*tudo que for criado é a data automatizada a partir da criação*/
+        mentoria.setData(LocalDate.now()); /*tudo que for criado automatizado a partir da criação*/
 
 
         /*System.out.println(curso1);
@@ -43,6 +54,8 @@ public class Main {
 
         devErick.progredir();
         devErick.progredir();
+        devErick.progredir();
+
         System.out.println("-");
 
         System.out.println("Conteúdos inscritos de ERICK"+ devErick.getConteudosInscritos());
@@ -60,7 +73,9 @@ public class Main {
 
         devCamila.progredir();
         devCamila.progredir();
-        devCamila.progredir();
+
+
+
         System.out.println("-");
 
         System.out.println("Conteúdos inscritos de CAMILA"+ devCamila.getConteudosInscritos());
